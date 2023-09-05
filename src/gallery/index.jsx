@@ -1,6 +1,6 @@
 import React from "react";
-import "./gallery.css";
-/*I make the object array every object has img,alt*/
+import "./style.css";
+
 const Gallery = () => {
   const galleryArray = [
     {
@@ -49,7 +49,7 @@ const Gallery = () => {
       state: false,
     },
   ];
-  const stateArray = galleryArray.filter((value) => value.state);
+  // const stateArray = galleryArray.filter((value) => value.state);
 
   return (
     <div className="gallery">
@@ -57,7 +57,7 @@ const Gallery = () => {
         <h1>css flexbox photo gallery</h1>
       </header>
       <div className="photo">
-        {stateArray.map((value) => (
+        {galleryArray.map((value) => (
           <img src={value.url} alt={value.alt} />
         ))}
       </div>
