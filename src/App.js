@@ -7,7 +7,7 @@ import Context from "./context";
 function App() {
   return (
     <div className="app">
-      <nav>
+      <nav className="nav">
         <Link to="/" className="nav-item">
           <h1>Rothko</h1>
         </Link>

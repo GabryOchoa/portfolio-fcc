@@ -19,3 +19,27 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+.app {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /*align to left*/
+  padding: 10px;
+  list-style-type: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #1b1b32;
+}
+
+.nav-item h1 {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  margin-bottom: 10px;
+}
