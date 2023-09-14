@@ -3,7 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Rothko from "./rothko";
 import Gallery from "./gallery";
 import Quiz from "./quiz";
-import Context from "./context";
+
 function App() {
   return (
     <div className="app">
@@ -25,7 +25,6 @@ function App() {
         <Route path="/" element={<Rothko />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
-        <Route path="/context" element={<Context />}></Route>
       </Routes>
     </div>
   );
