@@ -4,6 +4,8 @@ import Rothko from "./rothko";
 import Gallery from "./gallery";
 import Quiz from "./quiz";
 import Context from "./context";
+import Tribute from "./Tribute-page";
+
 function App() {
   return (
     <div className="app">
@@ -20,12 +22,16 @@ function App() {
         <Link to="/context" className="nav-item">
           <h1>Use Context</h1>
         </Link>
+        <Link to="/Tribute-page" className="nav-item">
+          <h1>Tribute Page</h1>
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<Rothko />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
         <Route path="/context" element={<Context />}></Route>
+        <Route path="/Tribute-page" element={<Tribute />}></Route>
       </Routes>
     </div>
   );
