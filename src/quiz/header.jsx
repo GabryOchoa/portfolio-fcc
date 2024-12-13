@@ -26,12 +26,12 @@ export const Header = () => {
     <Row key={value.key} value={value} />
   ));
   return (
-    <>
+    <div className="header-container">
       <header>
         <img id="logo" src={objHeader.imgLogo} alt="this is logo page" />
         <h1>HTML/CSS Quiz</h1>
         {row}
       </header>
-    </>
+    </div>
   );
 };

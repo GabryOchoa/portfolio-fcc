@@ -4,9 +4,9 @@ import { Form } from "./Form";
 /* This is the main Quiz component */
 const Quiz = () => {
   return (
-    <>
+    <div className="quiz-container">
       <Form />
-    </>
+    </div>
   );
 };
 
