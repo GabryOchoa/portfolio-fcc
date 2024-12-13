@@ -7,7 +7,7 @@
   margin: 30px 5px;
 }
 
-#title-tribute {
+.header-tribute h1 {
   margin-top: 50px;
   font-size: 40px;
 }
@@ -53,6 +53,10 @@
 
 #tribute-info > h3 {
   margin: 50px 0 20px 0;
+}
+
+.footer-tribute h3 {
+  margin: 20px 0 20px 340px;
 }
 
 span {
