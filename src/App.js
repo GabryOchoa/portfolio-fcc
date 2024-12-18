@@ -4,6 +4,7 @@ import Rothko from "./rothko";
 import Gallery from "./gallery";
 import Quiz from "./quiz";
 import Context from "./context";
+
 function App() {
   return (
     <div className="app">
@@ -18,14 +19,14 @@ function App() {
           <h1>HTML/CSS Quiz</h1>
         </Link>
         <Link to="/context" className="nav-item">
-          <h1>Use Context</h1>
+          <h1>Balance Sheet</h1>
         </Link>
       </nav>
       <Routes>
         <Route path="/" element={<Rothko />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
-        <Route path="/context" element={<Context />}></Route>
+        <Route path="/context-sheet" element={<Context />}></Route>
       </Routes>
     </div>
   );
