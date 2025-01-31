@@ -1,7 +1,7 @@
 import React from "react";
 
 /*Header component of table */
-export const Header = ({ arr }) => {
+export const Header = ({ years }) => {
   return (
     <div className="header-container">
       <h1>
@@ -11,7 +11,8 @@ export const Header = ({ arr }) => {
         </span>
       </h1>
       <div className="years-header" aria-hidden="true">
-        {arr.map((value, index) => (
+        {/* iterates year data from index  */}
+        {years.map((value, index) => (
           <span key={index} className="year">
             {value.year}
           </span>
