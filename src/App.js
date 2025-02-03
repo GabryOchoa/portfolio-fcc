@@ -19,7 +19,7 @@ function App() {
           <h1>HTML/CSS Quiz</h1>
         </Link>
         <Link to="/context" className="nav-item">
-          <h1>Use Context</h1>
+          <h1>Balance Sheet</h1>
         </Link>
         <Link to="/Tribute-page" className="nav-item">
           <h1>Tribute Page</h1>
@@ -29,6 +29,7 @@ function App() {
         <Route path="/" element={<Rothko />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
+
       </Routes>
     </div>
   );
