@@ -4,6 +4,7 @@ import Rothko from "./rothko";
 import Gallery from "./gallery";
 import Quiz from "./quiz";
 
+
 function App() {
   return (
     <div className="app">
@@ -19,6 +20,9 @@ function App() {
         </Link>
         <Link to="/context" className="nav-item">
           <h1>Use Context</h1>
+        </Link>
+        <Link to="/Tribute-page" className="nav-item">
+          <h1>Tribute Page</h1>
         </Link>
       </nav>
       <Routes>
