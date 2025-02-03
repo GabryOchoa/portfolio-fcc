@@ -3,7 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Rothko from "./rothko";
 import Gallery from "./gallery";
 import Quiz from "./quiz";
-import Context from "./context";
+
 
 function App() {
   return (
@@ -21,12 +21,15 @@ function App() {
         <Link to="/context" className="nav-item">
           <h1>Balance Sheet</h1>
         </Link>
+        <Link to="/Tribute-page" className="nav-item">
+          <h1>Tribute Page</h1>
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<Rothko />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
-        <Route path="/context-sheet" element={<Context />}></Route>
+
       </Routes>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import "./rothko.css";
+import "./style.css";
 
 const Rothko = () => {
   return (
