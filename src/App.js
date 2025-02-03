@@ -3,8 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Rothko from "./rothko";
 import Gallery from "./gallery";
 import Quiz from "./quiz";
-import Context from "./context";
-import Tribute from "./Tribute-page";
+
 
 function App() {
   return (
@@ -30,8 +29,6 @@ function App() {
         <Route path="/" element={<Rothko />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
-        <Route path="/context" element={<Context />}></Route>
-        <Route path="/Tribute-page" element={<Tribute />}></Route>
       </Routes>
     </div>
   );
