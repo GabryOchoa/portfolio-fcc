@@ -2,13 +2,13 @@
 export const Protein = () => {
   // this one is an array of object
   const arrayPro = [
-    { name: "Vitamin D 2mcg", percentage: "10%" },
-    { name: "Calcium 260mg", percentage: "20%" },
-    { name: "Iron 8mg", percentage: "45%" },
+    { id: 1, name: "Vitamin D 2mcg", percentage: "10%" },
+    { id: 2, name: "Calcium 260mg", percentage: "20%" },
+    { id: 3, name: "Iron 8mg", percentage: "45%" },
   ];
   /* we use map to call the arrayPro array   */
   const rows = arrayPro.map((val) => (
-    <p>
+    <p key={val.id}>
       {val.name} <span>{val.percentage}</span>
     </p>
   ));

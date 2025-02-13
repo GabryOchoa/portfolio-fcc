@@ -1,20 +1,20 @@
 /* This select component brings the option select  */
 const Option = () => {
   const arraySelect = [
-    { value: "", option: "select an option" },
-    { value: "yes", option: "Yes" },
-    { value: "no", option: "No" },
+    { id: 1, value: "", option: "select an option" },
+    { id: 2, value: "yes", option: "Yes" },
+    { id: 3, value: "no", option: "No" },
   ];
 
   const optionMap = arraySelect.map((val) => {
     return (
-      <>
-        <option value={val.value}>{val.option}</option>
-      </>
+      <option key={val.id} value={val.value}>
+        {val.option}
+      </option>
     );
   });
   return (
-    <div class="answer">
+    <div className="answer">
       <select name="customer" id="customer" required>
         {optionMap}{" "}
       </select>
@@ -25,23 +25,23 @@ const Option = () => {
 /* This is CSS component is section number 3 of the page */
 export const Select = () => {
   return (
-    <section /*role="region"*/ aria-labelledby="css-questions">
+    <section aria-labelledby="css-questions">
       <h2 id="css-questions">CSS</h2>
-      <div class="form-row">
-        <div class="question-block">
-          <label for="customer">Are you a frontend developer?</label>
+      <div className="form-row">
+        <div className="question-block">
+          <label htmlFor="customer">Are you a frontend developer?</label>
         </div>
         {/* call the selected component where an array for the options map is found */}
         <Option />
-        <div class="question-block">
-          <label for="css-questions">Do you have any questions:</label>
+        <div className="question-block">
+          <label htmlFor="css-questions">Do you have any questions:</label>
         </div>
-        <div class="answer">
+        <div className="answer">
           <textarea
             id="css-questions"
             name="css-questions"
             rows="5"
-            cols="24"
+            cols="40"
             placeholder="Who is flexbox..."
           ></textarea>
         </div>

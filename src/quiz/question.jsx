@@ -2,27 +2,25 @@
 const QuizH = ({ arr }) => {
   const il = arr.option.map((val) => {
     return (
-      <>
-        <li>
-          <label for={val.id}>
-            <input
-              type="radio"
-              id={val.id}
-              name={val.nameInput}
-              value={val.value}
-            />
-            {val.label}
-          </label>
-        </li>
-      </>
+      <li key={val.id}>
+        <label htmlFor={val.id}>
+          <input
+            type="radio"
+            id={val.id}
+            name={val.nameInput}
+            value={val.value}
+          />
+          {val.label}
+        </label>
+      </li>
     );
   });
   return (
-    <div class="question-block">
+    <div className="question-block">
       <p>{arr.num}</p>
       <fieldset className="question" name={arr.nameField}>
         <legend>{arr.legend}</legend>
-        <ul class="answers-list">{il}</ul>
+        <ul className="answers-list">{il}</ul>
       </fieldset>
     </div>
   );
@@ -54,12 +52,10 @@ export const Question = () => {
     },
   ];
   /* it maps each value of the array object */
-  const quizHtml = object.map((value) => (
-    <QuizH key={value.nameInput} arr={value} />
-  ));
+  const quizHtml = object.map((value) => <QuizH key={value.num} arr={value} />);
 
   return (
-    <section /*role="region"*/ aria-labelledby="html-questions">
+    <section aria-labelledby="html-questions">
       <h2 id="html-questions">HTML</h2>
       {quizHtml}
     </section>

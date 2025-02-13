@@ -48,7 +48,7 @@ export default function BalanceSheet() {
         <title>Balance Sheet</title>
       </div>
       <div className="main-container">
-        <Header arr={year} />
+        <Header year={year} />
         <div className="table-wrap">
           <TableTemplate year={year} data={assetsData} title="Assets" />
           <TableTemplate
