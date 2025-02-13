@@ -3,7 +3,7 @@ import React from "react";
 function Heater() {
   return (
     <div>
-      <div class="header-tribute">
+      <div className="header-tribute">
         <h1 id="title-tribute">Dr. Srinivasa Ramanujan</h1>
         <p>The man who taught infinity</p>
       </div>
