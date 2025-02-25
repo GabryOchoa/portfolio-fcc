@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 const skills = [
   { id: 1, skill: "HTML5 and CSS3 best practices" },
